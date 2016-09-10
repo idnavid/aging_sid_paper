@@ -1,6 +1,6 @@
 \documentclass[a4paper]{article}
 
-\usepackage{INTERSPEECH2016}
+\usepackage{spconf}
 
 \usepackage{graphicx}
 \usepackage{amssymb,amsmath,bm}
@@ -14,7 +14,7 @@
 \sloppy % better line breaks
 \ninept
 
-\title{Compensating for short-term aging effects in speaker verification \\ using domain adaptation}
+\title{Short-term Aging Compensation in Speaker Verification\\Using Domain Adaptation Techniques}
 
 
 \makeatletter
@@ -228,7 +228,7 @@ Of all the methods carried out in this study, we conclude that weighted covarian
 Speaker verification experiments are presented on the Multi-session Audio Research Project (MARP) corpus in order to investigate performance under short-term aging conditions. It was shown that performance drops as sessions are separated by greater time differences, with a relative increase in Equal Error Rate (EER) of up to 65\% (from 0.93\% for 6 month mismatch to 1.52\% for 3 years mismatch). We addressed problem of short-term aging by investigating several domain adaptation approaches. Our objective was to introduce the effects of short-term session variability to the post-processed i-vector subspace without having to acquire multiple recordings of each development speaker over a period of several months. Weighted likelihood probabilistic linear discriminant analysis was used to combine PLDAs trained on different age-dependent sets by modifying the likelihood maximization to include likelihoods from two datasets. Weighted covariance linear discriminant analysis was used to broaden within-speaker covariances to include age variability. These two methods were compared with a standard averaging of PLDA parameters to interpolate the subspaces of different age groups. Experiment showed that wcLDA and wlPLDA (in that order) were more effective in capturing session mismatch.  
 
   \newpage
-  \eightpt
+%  \eightpt
   \bibliographystyle{IEEEtran}
 
   \bibliography{mybib}
